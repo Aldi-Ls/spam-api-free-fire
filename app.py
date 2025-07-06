@@ -31,7 +31,7 @@ SERVERS = ["IND"]
 
 class TokenManager:
     def __init__(self):
-        self.db_url = os.getenv("DATABASE_URL")
+        self.db_url = os.getenv("https://raw.githubusercontent.com/team-ujjaiwal/FreeFireSendRequest/d8f822ba615ec7f35cc8e790da186a0b63b8ce72/spam_ind.json")
         self.lock = threading.Lock()
 
     def get_valid_tokens(self, server_key="IND"):
